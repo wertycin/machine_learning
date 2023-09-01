@@ -2,9 +2,9 @@
 from sklearn.ensemble import RandomForestClassifier
 from module import *
 clf = RandomForestClassifier(random_state=0)
-N = 40 # Размеры прямоугольного поля
+N = 20 # Размеры прямоугольного поля
 M = 80
-X = [[0,  0], [38, 25], [0, 9], [10, 18], [20, 20], [38, 10]]
+X = [[8,  10], [18, 25], [0, 9], [10, 78], [15, 20], [0, 1]]
 y = [0, 1, 2, 3, 4, 5]
 clf.fit(X, y)
 table = [[0 for i in range(M)] for i in range(N)]
